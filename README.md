@@ -44,71 +44,34 @@ Vous avez besoin de VsCode et Git
 
 ## Commandes Git utiles
 
+(le nom "mybranch" est un example, et doit être adapté à chaque feature)
 
- - vérifier les fichiers modifiés localement
-```
-git status
-```
+- Télécharger un repository existant sur GitHub `git clone git@github.com:nom/projet.git` (attention à bien utiliser le SSH)
 
-- annuler la modification d'un fichier
-```
-git checkout -- fichierquejeveuxpasmodifierfinalement.txt
-```
+- vérifier les fichiers modifiés localement `git status`
 
+- annuler la modification d'un fichier `git checkout -- mauvaisfichier.txt`
 
+- se positionner sur la branche principale `git checkout main`
 
- - être sûr qu'on est bien sur la branche "main"
-```
-git checkout main
-```
+- se positionner sur une autre branche `git checkout mybranch`
 
- - Créer une nouvelle branche en local
-```
-git checkout -b mybranch
-```
+- Créer une nouvelle branche en local `git checkout -b mybranch`
 
- - Faire une première modif du code, puis ajouter les modifs sur la branche
-```
-git add . && git commit -m 'commentaire sur les modifs'
-```
+- Faire une première modif du code, puis ajouter les modifs sur la branche `git add . && git commit -m 'commentaire sur les modifs'`
 
- - Pousser la branche sur Github
-```
-git push origin mybranch
-```
+- Pousser la branche sur Github `git push origin mybranch`
 
- - Créer une PR depuis mybranch
-(se fait depuis l'interface Github)
+- Créer une PR depuis mybranch : se fait depuis l'interface GitHub
 
-Lier une issue à la branche
-```
-Mettre un commentaire "fix #" + num de l'issue
-```
+- Faire le plus petit changement possible qui marche, puis `git add . && git commit -m 'mon autre modif' && git push origin mybranch`
 
- - Faire le plus petit changement possible qui marche, puis
-```
-git add . && git commit -m 'mon autre modif' && git push origin mybranch
-```
+- Encore un autre, puis `git add . && git commit -m 'presque fini' && git push origin mybranch`, etc
 
- - Encore un autre, puis
-```
-git add . && git commit -m 'presque fini' && git push origin mybranch
-```
+- Merger la Pull Request : se fait depuis l'interface Github.
 
- - Un dernier pour la route
-```
-git add . && git commit -m 'done' && git push origin mybranch
-```
+- Vérifier l'arbre en local: utiliser Gitk, ou le "source control graph" de VsCode
 
- - Merger la Pull Request (se fait depuis l'interface Github)
-
- - Reprendre "main" chez soi une fois que la PR a été mergée
-```
-git checkout main
-git pull origin main
-```
-
-Et on repart sur une nouvelle branche!
 
 Vérifier l'arbre en local
 ```
