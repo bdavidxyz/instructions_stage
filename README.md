@@ -72,13 +72,16 @@ Vous avez besoin de VsCode et Git
 
 - Vérifier l'arbre en local: utiliser Gitk, ou le "source control graph" de VsCode
 
+- Récuperer en local une branche qui est sur Github : `git fetch origin $1 && git checkout $1`
 
 Vérifier l'arbre en local
+
 ```
 gitk --all &
 ```
 
 Raccourcis utiles :
+
 ```
 alias gs='git status'
 alias gk='gitk --all &'
@@ -86,6 +89,7 @@ alias gd='git diff'
 ```
 
 Fonction utile:
+
 ```
 feco() {
  git fetch origin $1 && git checkout $1
