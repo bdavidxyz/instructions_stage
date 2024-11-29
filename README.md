@@ -74,24 +74,4 @@ Vous avez besoin de VsCode et Git
 
 - Récuperer en local une branche qui est sur Github : `git fetch origin $1 && git checkout $1`
 
-Vérifier l'arbre en local
-
-```
-gitk --all &
-```
-
-Raccourcis utiles :
-
-```
-alias gs='git status'
-alias gk='gitk --all &'
-alias gd='git diff'
-```
-
-Fonction utile:
-
-```
-feco() {
- git fetch origin $1 && git checkout $1
-}
-```
+- Visualiser l'historique des modifications : utiliser GitK, ou bien, sous VSCode, "source control graph"
