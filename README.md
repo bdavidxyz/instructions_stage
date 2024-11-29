@@ -35,12 +35,12 @@ Vous avez besoin de VsCode et Git
 
 ##  Liste des features demandées
 
-- Dans index.html, on doit trouver plusieurs niveau de titre différent, chacun ayant au moins un paragraphe rempli.
-- Dans index.html, on doit trouver un formulaire qui fait semblant d'envoyer une requete, sans JS (utiliser jsonplaceholder pour le endpoint)
-- Dans index.html, un des paragraphes doit lister l'ensemble des tags (strong, em...) liés à la typographie
-- Dans index.html, on doit trouver une barre de menu, où chaque titre a une ancre liée (anchor link, avec un #) à un paragraphe de niveau 2 (h2)
-- Dans index.html, on doit trouver un exemple d'utilisation d'AlpineJS pour montrer/cacher un élément
-- Dans index.html, on doit voir au moins 2 images, en lazy-loading, format base64.
+- FEAT_TITL: Dans index.html, on doit trouver plusieurs niveau de titre différent, chacun ayant au moins un paragraphe rempli.
+- FEAT_FORM: Dans index.html, on doit trouver un formulaire qui fait semblant d'envoyer une requete, sans JS (utiliser jsonplaceholder pour le endpoint)
+- FEAT_PARA: Dans index.html, un des paragraphes doit lister l'ensemble des tags (strong, em...) liés à la typographie
+- FEAT_NAV:  Dans index.html, on doit trouver une barre de menu, où chaque titre a une ancre liée (anchor link, avec un #) à un paragraphe de niveau 2 (h2)
+- FEAT_ALP:  Dans index.html, on doit trouver un exemple d'utilisation d'AlpineJS pour montrer/cacher un élément
+- FEAT_IMG:  Dans index.html, on doit voir au moins 2 images, en lazy-loading, format base64.
 
 ## Commandes Git utiles
 
